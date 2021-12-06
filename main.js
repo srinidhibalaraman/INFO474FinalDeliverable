@@ -11,7 +11,7 @@ function onCategoryChanged() {
 // this function helps convert numbers into string during data preprocessing
 function dataPreprocessor(row) {
     return {
-        type: row.type,
+        Type: row.Type,
         Occupation: row.Occupation,
         All_workers: +row.All_workers,
         All_weekly: +row.All_weekly,
