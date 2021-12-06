@@ -71,7 +71,7 @@ var jobsMap = {
 d3.csv('inc_occ_gender.csv', dataPreprocessor).then(function(dataset) {
     // Create global variables here and intialize the chart
     incomes = dataset;
-
+    console.log(incomes);
 
     // **** Your JavaScript code goes here ****
     widthScale = d3.scaleLinear()
