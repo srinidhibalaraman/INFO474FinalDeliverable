@@ -11,8 +11,13 @@ function onCategoryChanged() {
 // this function helps convert numbers into string during data preprocessing
 function dataPreprocessor(row) {
     return {
-        letter: row.letter,
-        frequency: +row.frequency
+        Occupation: row.Occupation,
+        All_workers: +row.All_workers,
+        All_weekly: +row.All_weekly,
+        M_workers: +row.M_workers,
+        M_weekly: +row.M_weekly,
+        F_workers: +row.F_workers,
+        F_weekly: +row.F_weekly
     };
 }
 
@@ -37,20 +42,40 @@ var chartG = svg.append('g')
     .attr('transform', 'translate('+[padding.l, padding.t]+')');
 
 // A map with arrays for each category of letter sets
-var lettersMap = {
-    'all-letters': 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
-    'only-consonants': 'BCDFGHJKLMNPQRSTVWXZ'.split(''),
-    'only-vowels': 'AEIOUY'.split('')
+var jobsMap = {
+    'all-jobs': 'MANAGEMENT, BUSINESS, COMPUTATIONAL, ENGINEERING, SCIENCE, SOCIAL SERVICE, LEGAL, EDUCATION, ARTS, HEALTHCARE PROFESSIONAL, PROTECTIVE SERVICE, CULINARY, GROUNDSKEEPING, SERVICE, SALES, OFFICE, AGRICULTURAL, CONSTRUCTION, MAINTENANCE, PRODUCTION, TRANSPORTATION'.split(', '),
+    'management': 'MANAGEMENT',
+    'business': 'BUSINESS',
+    'computational': 'COMPUTATIONAL',
+    'engineering': 'ENGINEERING',
+    'science': 'SCIENCE',
+    'social service': 'SOCIAL SERVICE',
+    'legal': 'LEGAL',
+    'education': 'EDUCATION',
+    'arts': 'ARTS',
+    'healthcare': 'HEALTHCARE',
+    'professional': 'PROFESSIONAL',
+    'protective service': 'PROTECTIVE SERVICE',
+    'culinary': 'CULINARY',
+    'groundskeeping': 'GROUNDSKEEPING',
+    'service': 'SERVICE',
+    'sales': 'SALES',
+    'office': 'OFFICE',
+    'agricultural': 'AGRICULTURAL',
+    'construction': 'CONSTRUCTION',
+    'maintenance': 'MAINTENANCE',
+    'production': 'PRODUCTION',
+    'transportation': 'TRANSPORTATION'
 };
 
-d3.csv('letter_freq.csv', dataPreprocessor).then(function(dataset) {
+d3.csv('inc_occ_gender.csv', dataPreprocessor).then(function(dataset) {
     // Create global variables here and intialize the chart
-    letters = dataset;
+    incomes = dataset;
 
 
     // **** Your JavaScript code goes here ****
     widthScale = d3.scaleLinear()
-        .domain([0, d3.max(letters, function(d) { return d.frequency; })])
+        .domain([0, d3.max(incomes, function(d) { return d.All_weekly; })])
         .range([0, chartWidth]);
 
     var axisTop = d3.axisTop(widthScale).ticks(6).tickFormat(x => x * 100 + '%');
@@ -69,59 +94,52 @@ d3.csv('letter_freq.csv', dataPreprocessor).then(function(dataset) {
         .call(axisBottom);
 
     svg.append('text')
-        .attr("x", (svgWidth / 2))             
+        .attr("x", (svgWidth / 2))
         .attr("y", (padding.t / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px")  
-        .text('Letter Frequency (%)');
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .text('Weekly Wage ($)');
 
     // Update the chart for all letters to initialize
-    updateChart('all-letters');
+    updateChart('all-jobs');
 });
 
 
 function updateChart(filterKey) {
-
+    var filteredJobs = incomes.filter(function(d){
+        return jobsMap[filterKey].includes(d.type);
+    });
     // Create a filtered array of letters based on the filterKey
-    if (filterKey =='string') {
-        var filteredLetters = letters.filter(function(d) {
-            return categoryVal > d.frequency;
-        });
-    } else {
-        var filteredLetters = letters.filter(function(d){
-            return lettersMap[filterKey].indexOf(d.letter) >= 0;
-        });
-    }
 
     // **** Draw and Update your chart here ****
     var bars = chartG.selectAll('.bar')
-    .data(filteredLetters, function (d) {
-        return d.letter;
+    .data(filteredJobs, function(d) {
+        return d.Occupation;
     })
 
-    var barsEnter = bars.enter()
-        .append('g')
+    var barEnter = bars.enter()
+        .append("g")
         .attr('class', 'bar');
 
-    barsEnter.merge(bars)
+        barEnter.merge(bars)
         .attr('transform', function(d, i) {
             return 'translate(' + [0, i * barBand + 4] + ')';
         })
 
-    barsEnter.append('rect')
- 	.attr("width", function (d) { 
-        return widthScale(d.frequency);
-    })
- 	.attr("height", barHeight);
+        barEnter.append('rect')
+        .attr('width', function(d) {
+            return xScale(d.All_weekly);
+        })
+        .attr('height', barHeight);
 
-    barsEnter.append('text')
-    .attr('x', -20)
-    .attr('dy', '0.75em')
-    .text(function (d) {
-        return d.letter;
-    })
-
+        barEnter.append('text')
+        .attr('x', -20)
+        .attr('dy', '0.93m')
+        .text(function(d) {
+            return d.Occupation;
+        })
     bars.exit().remove();
 }
 
 // Remember code outside of the data callback function will run before the data loads
+
