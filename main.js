@@ -28,7 +28,7 @@ var svg = d3.select('svg');
 var svgWidth = +svg.attr('width');
 var svgHeight = +svg.attr('height');
 
-var padding = {t: 60, r: 40, b: 30, l: 400};
+var padding = {t: 60, r: 40, b: 30, l: 500};
 
 // Compute chart dimensions
 var chartWidth = svgWidth - padding.l - padding.r;
@@ -95,13 +95,14 @@ d3.csv('inc_occ_gender.csv', dataPreprocessor).then(function(dataset) {
     })
 
 
+
     // axis
     svg.append('g')
-    .attr("transform", "translate(400, 50)")
+    .attr("transform", "translate(500, 50)")
     .call(xAxis);
 
     svg.append('g')
-    .attr("transform", "translate(400, 9970)")
+    .attr("transform", "translate(500, 9970)")
     .call(xAxisBottom);
 
     svg.append('text')
@@ -138,12 +139,18 @@ function updateChart(filterKey) {
 
         barEnter.append('rect')
         .attr('width', function(d) {
-            return xScale(d.All_weekly);
+            return xScale(d.M_weekly);
+        })
+        .attr('height', barHeight);
+
+        barEnter.append('rect')
+        .attr('width', function(d) {
+            return xScale(d.F_weekly);
         })
         .attr('height', barHeight);
 
         barEnter.append('text')
-        .attr('x', -20)
+        .attr('x', -490)
         .attr('dy', '0.93m')
         .text(function(d) {
             return d.Occupation;
