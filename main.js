@@ -74,6 +74,12 @@ d3.csv('inc_occ_gender.csv', dataPreprocessor).then(function(dataset) {
     incomes = dataset;
     console.log(incomes);
 
+    var subgroups = [incomes.columns[5], incomes.columns[7]];
+    console.log(subgroups);
+
+    var groups = d3.map(incomes, function(d){return(d.Occupation)}).keys()
+    console.log(groups);
+
     xScale = d3.scaleLinear()
     .domain([0, d3.max(dataset, function(d) { return d.All_weekly; })])
     .range([0, chartWidth]);
@@ -88,6 +94,8 @@ d3.csv('inc_occ_gender.csv', dataPreprocessor).then(function(dataset) {
         return '$' + (d);
     })
 
+
+    // axis
     svg.append('g')
     .attr("transform", "translate(400, 50)")
     .call(xAxis);

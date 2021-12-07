@@ -122,7 +122,6 @@ SOCIAL SERVICE,Counselors,635,904,184,908,451,902
 SOCIAL SERVICE,Social workers,677,877,127,943,549,862
 SOCIAL SERVICE,Probation officers and correctional treatment specialists,85,967,42,Na,43,0
 SOCIAL SERVICE,Social and human service assistants,173,676,23,Na,149,673
-SOCIAL SERVICE,"Miscellaneous community and social service specialists, including health educators and community health workers",92,831,29,Na,63,728
 SOCIAL SERVICE,Clergy,376,1002,316,1021,60,924
 SOCIAL SERVICE,"Directors, religious activities and education",62,929,31,Na,31,0
 SOCIAL SERVICE,"Religious workers, all other",44,Na,23,Na,21,0
@@ -205,7 +204,6 @@ HEALTHCARE PROFESSIONAL,Medical transcriptionists,28,Na,3,Na,26,0
 HEALTHCARE PROFESSIONAL,Pharmacy aides,22,Na,4,Na,18,0
 HEALTHCARE PROFESSIONAL,Veterinary assistants and laboratory animal caretakers,21,Na,4,Na,17,0
 HEALTHCARE PROFESSIONAL,Phlebotomists,91,551,15,Na,76,534
-HEALTHCARE PROFESSIONAL,"Miscellaneous healthcare support occupations, including medical equipment preparers",115,524,44,Na,71,511
 PROTECTIVE SERVICE,First-line supervisors of correctional officers,57,856,41,Na,16,0
 PROTECTIVE SERVICE,First-line supervisors of police and detectives,114,1427,97,1425,17,0
 PROTECTIVE SERVICE,First-line supervisors of fire fighting and prevention workers,42,Na,39,Na,3,0
@@ -238,7 +236,6 @@ CULINARY,Dishwashers,117,398,98,401,19,0
 CULINARY,"Hosts and hostesses, restaurant, lounge, and coffee shop",66,400,8,Na,58,397
 CULINARY,"Food preparation and serving related workers, all other",6,Na,4,Na,3,0
 GROUNDSKEEPING,First-line supervisors of housekeeping and janitorial workers,172,620,108,700,64,571
-GROUNDSKEEPING,"First-line supervisors of landscaping, lawn service, and groundskeeping workers",80,649,79,653,1,0
 GROUNDSKEEPING,Janitors and building cleaners,1536,507,1111,547,425,429
 GROUNDSKEEPING,Maids and housekeeping cleaners,876,416,134,475,742,407
 GROUNDSKEEPING,Pest control workers,77,585,74,591,3,0
@@ -399,7 +396,6 @@ MAINTENANCE,Automotive service technicians and mechanics,710,722,694,724,16,0
 MAINTENANCE,Bus and truck mechanics and diesel engine specialists,327,831,327,830,0,0
 MAINTENANCE,Heavy vehicle and mobile equipment service technicians and mechanics,206,928,206,928,0,0
 MAINTENANCE,Small engine mechanics,39,Na,39,Na,0,0
-MAINTENANCE,"Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",66,592,65,591,1,0
 MAINTENANCE,Control and valve installers and repairers,23,Na,23,Na,0,0
 MAINTENANCE,"Heating, air conditioning, and refrigeration mechanics and installers",341,806,337,810,4,0
 MAINTENANCE,Home appliance repairers,36,Na,36,Na,0,0
@@ -432,18 +428,11 @@ PRODUCTION,Food batchmakers,79,500,25,Na,54,489
 PRODUCTION,Food cooking machine operators and tenders,7,Na,5,Na,2,0
 PRODUCTION,"Food processing workers, all other",132,594,82,679,50,508
 PRODUCTION,Computer control programmers and operators,83,833,81,857,2,0
-PRODUCTION,"Extruding and drawing machine setters, operators, and tenders, metal and plastic",8,Na,7,Na,1,0
 PRODUCTION,"Forging machine setters, operators, and tenders, metal and plastic",6,Na,6,Na,0,0
 PRODUCTION,"Rolling machine setters, operators, and tenders, metal and plastic",15,Na,12,Na,3,0
-PRODUCTION,"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",78,633,62,674,15,0
-PRODUCTION,"Drilling and boring machine tool setters, operators, and tenders, metal and plastic",5,Na,5,Na,1,0
-PRODUCTION,"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",41,Na,39,Na,3,0
-PRODUCTION,"Lathe and turning machine tool setters, operators, and tenders, metal and plastic",12,Na,11,Na,1,0
-PRODUCTION,"Milling and planing machine setters, operators, and tenders, metal and plastic",1,Na,1,Na,0,0
 PRODUCTION,Machinists,338,834,320,840,17,0
 PRODUCTION,"Metal furnace operators, tenders, pourers, and casters",29,Na,28,Na,1,0
 PRODUCTION,"Model makers and patternmakers, metal and plastic",6,Na,3,Na,3,0
-PRODUCTION,"Molders and molding machine setters, operators, and tenders, metal and plastic",47,Na,39,Na,9,0
 PRODUCTION,"Multiple machine tool setters, operators, and tenders, metal and plastic",1,Na,1,Na,0,0
 PRODUCTION,Tool and die makers,49,Na,49,Na,0,0
 PRODUCTION,"Welding, soldering, and brazing workers",568,760,545,767,23,0
@@ -464,8 +453,6 @@ PRODUCTION,"Tailors, dressmakers, and sewers",37,Na,9,Na,27,0
 PRODUCTION,Textile bleaching and dyeing machine operators and tenders,2,Na,2,Na,0,0
 PRODUCTION,"Textile cutting machine setters, operators, and tenders",9,Na,7,Na,2,0
 PRODUCTION,"Textile knitting and weaving machine setters, operators, and tenders",8,Na,3,Na,4,0
-PRODUCTION,"Textile winding, twisting, and drawing out machine setters, operators, and tenders",7,Na,5,Na,2,0
-PRODUCTION,"Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",0,Na,0,Na,0,0
 PRODUCTION,Fabric and apparel patternmakers,4,Na,3,Na,1,0
 PRODUCTION,Upholsterers,29,Na,21,Na,7,0
 PRODUCTION,"Textile, apparel, and furnishings workers, all other",16,Na,12,Na,4,0
@@ -482,7 +469,6 @@ PRODUCTION,Miscellaneous plant and system operators,35,Na,33,Na,3,0
 PRODUCTION,"Chemical processing machine setters, operators, and tenders",62,1052,57,1082,5,0
 PRODUCTION,"Crushing, grinding, polishing, mixing, and blending workers",82,652,75,668,7,0
 PRODUCTION,Cutting workers,51,685,41,Na,9,0
-PRODUCTION,"Extruding, forming, pressing, and compacting machine setters, operators, and tenders",31,Na,25,Na,6,0
 PRODUCTION,"Furnace, kiln, oven, drier, and kettle operators and tenders",6,Na,5,Na,0,0
 PRODUCTION,"Inspectors, testers, sorters, samplers, and weighers",701,710,440,844,260,583
 PRODUCTION,Jewelers and precious stone and metal workers,19,Na,11,Na,7,0
