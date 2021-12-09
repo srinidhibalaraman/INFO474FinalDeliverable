@@ -12,3 +12,13 @@ body {
 #main {
     margin: 20px;
 }
+
+.hover-label {
+    opacity: 0;
+}
+
+.hover-label:hover {
+    opacity: 1.0;
+    left: 50%;
+    background-color: #bbbdc4;
+}

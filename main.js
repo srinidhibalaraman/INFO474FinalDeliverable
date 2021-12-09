@@ -35,7 +35,7 @@ var chartWidth = svgWidth - padding.l - padding.r;
 var chartHeight = svgHeight - padding.t - padding.b;
 
 // Compute the spacing for bar bands based on all 538 occupations
-var barBand = chartHeight / 538;
+var barBand = chartHeight / 523;
 var barHeight = barBand * .7;
 
 // Create a group element for appending chart elements
@@ -110,10 +110,37 @@ d3.csv('inc_occ_gender.csv', dataPreprocessor).then(function(dataset) {
     .attr('y', 20)
     .text('Weekly Wage ($)');
 
+    //hoverChart(incomes);
+
 
     // Update the chart for all letters to initialize
     updateChart('all-jobs');
 });
+
+function hoverChart(dataset) {
+    // for each player..
+    for (i = 0; i < dataset.length; i++) {
+        var x = scaleYear(dataset[i]['year'])
+        var y = scaleHomeruns(dataset[i]['homeruns'])
+
+        // identify their position
+        var position = 'translate(' + x + ', ' + y + ')'
+        var group = d3.select('svg').append('g')
+
+        // group.attr('transform', position)
+        //     .attr('align-items', 'center')
+
+        // group.append('circle')
+        //     .attr('r', '2px')
+        //     .style('fill', '#3ca0d9')
+
+        // and put their name by it
+        group.append('text')
+            .text(dataset[i]['name'])
+            .attr('font-size', '10px')
+            .attr('font-weight', 'bold')
+    }
+}
 
 
 function updateChart(filterKey) {
@@ -141,13 +168,24 @@ function updateChart(filterKey) {
         .attr('width', function(d) {
             return xScale(d.M_weekly);
         })
-        .attr('height', barHeight);
+        .attr('height', barHeight)
+        .attr('fill', '#377eb8');
 
         barEnter.append('rect')
         .attr('width', function(d) {
             return xScale(d.F_weekly);
         })
-        .attr('height', barHeight);
+        .attr('height', barHeight)
+        .attr('fill', '#f5e042');
+
+        barEnter.append('text')
+        .attr('x', 10)
+        .attr('dy', '0.93m')
+        .html(function(d) {
+            return ("weekly income of males: $" + d.M_weekly + ", weekly income of females: $" + d.F_weekly);
+        })
+        .attr('class', 'hover-label')
+        .attr('color', 'pink');
 
         barEnter.append('text')
         .attr('x', -490)
@@ -155,6 +193,7 @@ function updateChart(filterKey) {
         .text(function(d) {
             return d.Occupation;
         })
+
     bars.exit().remove();
 }
 
