@@ -5,39 +5,46 @@
         <title>Lab 5 - ABCs of D3</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="#">
     </head>
     <body>
+        <h1>U.S. Incomes by Occupation and Gender</h1>
+        <h6>By: Megha Jain & Srinidhi Balaraman</h6>
         <div id="main">
-            <svg width="1000" height="10000" style="border: 1px solid #777;">
+            <svg width="900" height="4200" style="border: 1px solid #777;" class="chart">
             </svg>
             <div>
-                <label for="categorySelect">Show: </label>
-                <select class="custom-select" id="categorySelect" onchange="onCategoryChanged()">
-                    <option selected value="all-jobs">all jobs</option>
-                    <option value="management">management</option>
-                    <option value="business">business</option>
-                    <option value="computational">computational</option>
-                    <option value="engineering">engineering</option>
-                    <option value="science">science</option>
-                    <option value="social service">social service</option>
-                    <option value="legal">legal</option>
-                    <option value="education">education</option>
-                    <option value="arts">arts</option>
-                    <option value="healthcare">healthcare</option>
-                    <option value="professional">professional</option>
-                    <option value="protective service">protective service</option>
-                    <option value="culinary">culinary</option>
-                    <option value="groundskeeping">groundskeeping</option>
-                    <option value="service">service</option>
-                    <option value="sales">sales</option>
-                    <option value="office">office</option>
-                    <option value="agricultural">agricultural</option>
-                    <option value="construction">construction</option>
-                    <option value="maintenance">maintenance</option>
-                    <option value="production">production</option>
-                    <option value="transportation">transportation</option>
-                </select>
+                <div class="dropdown">
+                    <label for="categorySelect">Show: </label>
+                    <select class="custom-select" id="categorySelect" onchange="onCategoryChanged()">
+                        <option selected value="all-jobs">all jobs</option>
+                        <option value="management">management</option>
+                        <option value="business">business</option>
+                        <option value="computational">computational</option>
+                        <option value="engineering">engineering</option>
+                        <option value="science">science</option>
+                        <option value="social service">social service</option>
+                        <option value="legal">legal</option>
+                        <option value="education">education</option>
+                        <option value="arts">arts</option>
+                        <option value="healthcare">healthcare</option>
+                        <option value="protective service">protective service</option>
+                        <option value="culinary">culinary</option>
+                        <option value="groundskeeping">groundskeeping</option>
+                        <option value="service">service</option>
+                        <option value="sales">sales</option>
+                        <option value="office">office</option>
+                        <option value="agricultural">agricultural</option>
+                        <option value="production">production</option>
+                        <option value="transportation">transportation</option>
+                    </select>
+                </div>
+                <div class="legend">
+                    <svg id="my_dataviz" height=300 width=450></svg>
+                </div>
             </div>
         </div>
     </body>
