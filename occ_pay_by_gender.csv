@@ -1,0 +1,120 @@
+﻿Type,Occupation,All_workers,All_weekly,M_workers,M_weekly,F_workers,F_weekly
+MANAGEMENT,Chief executives,1046,2041,763,2251,283,1836
+MANAGEMENT,General and operations managers,823,1260,621,1347,202,1002
+MANAGEMENT,Marketing and sales managers,948,1462,570,1603,378,1258
+MANAGEMENT,Administrative services managers,170,1191,96,1451,73,981
+MANAGEMENT,Computer and information systems managers,636,1728,466,1817,169,1563
+MANAGEMENT,Financial managers,1124,1408,551,1732,573,1130
+MANAGEMENT,Human resources managers,254,1365,68,1495,186,1274
+MANAGEMENT,Purchasing managers,193,1348,109,1404,84,1226
+MANAGEMENT,"Transportation, storage, and distribution managers",276,966,224,1006,52,749
+MANAGEMENT,Education administrators,778,1423,282,1585,496,1252
+MANAGEMENT,Food service managers,763,742,389,820,374,680
+MANAGEMENT,Lodging managers,123,985,54,1171,68,902
+MANAGEMENT,Medical and health services managers,592,1210,154,1422,438,1156
+MANAGEMENT,"Property, real estate, and community association managers",401,914,171,1137,230,823
+MANAGEMENT,Social and community service managers,305,1022,105,1142,200,965
+MANAGEMENT,"Managers, all other",2803,1408,1717,1525,1085,1213
+BUSINESS,"Wholesale and retail buyers, except farm products",142,926,73,886,69,985
+BUSINESS,"Purchasing agents, except wholesale, retail, and farm products",260,1009,136,1020,124,986
+BUSINESS,"Claims adjusters, appraisers, examiners, and investigators",317,963,141,1134,176,824
+BUSINESS,Compliance officers,235,1198,126,1375,109,1025
+BUSINESS,Human resources workers,592,1002,151,1158,441,984
+BUSINESS,Management analysts,529,1431,291,1519,237,1348
+BUSINESS,Market research analysts and marketing specialists,203,1284,85,1411,118,1239
+BUSINESS,"Business operations specialists, all other",186,1090,74,1461,112,969
+BUSINESS,Accountants and auditors,1464,1132,618,1345,846,988
+BUSINESS,Financial analysts,295,1426,168,1680,127,1171
+BUSINESS,Personal financial advisors,407,1419,248,1738,159,1033
+BUSINESS,Credit counselors and loan officers,313,997,146,1186,166,906
+COMPUTATIONAL,Computer systems analysts,499,1389,325,1462,173,1256
+COMPUTATIONAL,Computer programmers,450,1438,357,1501,93,1302
+COMPUTATIONAL,"Software developers, applications and systems software",1287,1682,1054,1751,232,1415
+COMPUTATIONAL,Web developers,151,1165,98,1233,53,1026
+COMPUTATIONAL,Computer support specialists,396,1079,291,1135,105,908
+COMPUTATIONAL,"Computer occupations, all other",490,1227,374,1252,116,1145
+COMPUTATIONAL,Operations research analysts,122,1441,59,1574,63,1325
+ENGINEERING,"Engineers, all other",393,1527,339,1537,54,1448
+ENGINEERING,"Engineering technicians, except drafters",352,963,284,984,68,827
+SCIENCE,Medical scientists,151,1250,68,1362,84,1082
+SCIENCE,"Physical scientists, all other",189,1553,121,1770,68,1170
+SCIENCE,"Miscellaneous life, physical, and social science technicians",157,846,79,1001,78,780
+SOCIAL SERVICE,Counselors,635,904,184,908,451,902
+SOCIAL SERVICE,Social workers,677,877,127,943,549,862
+SOCIAL SERVICE,Clergy,376,1002,316,1021,60,924
+LEGAL,Lawyers,803,1886,503,1914,300,1717
+EDUCATION,Postsecondary teachers,917,1258,516,1405,401,1144
+EDUCATION,Elementary and middle school teachers,2806,974,543,1077,2262,957
+EDUCATION,Secondary school teachers,1048,1066,438,1149,610,1006
+EDUCATION,Other teachers and instructors,378,896,179,1024,199,817
+ARTS,Designers,593,993,301,1099,291,918
+ARTS,Producers and directors,120,1270,67,1340,53,1234
+ARTS,Editors,108,1148,58,1205,50,1125
+HEALTHCARE,Pharmacists,206,1920,98,2117,108,1811
+HEALTHCARE,Physicians and surgeons,740,1824,457,1915,283,1533
+HEALTHCARE,Physical therapists,178,1265,56,1347,123,1215
+HEALTHCARE,Registered nurses,2382,1116,278,1222,2104,1098
+HEALTHCARE,Clinical laboratory technologists and technicians,270,901,69,1089,201,796
+HEALTHCARE,Diagnostic related technologists and technicians,253,964,76,1106,177,908
+HEALTHCARE,Health practitioner support technologists and technicians,487,636,99,652,389,633
+HEALTHCARE,"Nursing, psychiatric, and home health aides",1400,467,163,526,1237,457
+PROTECTIVE SERVICE,"Bailiffs, correctional officers, and jailers",453,754,341,779,112,686
+PROTECTIVE SERVICE,Police and sheriff's patrol officers,655,1002,569,1001,86,1009
+PROTECTIVE SERVICE,Security guards and gaming surveillance officers,708,567,555,592,153,515
+CULINARY,Chefs and head cooks,340,619,285,656,55,492
+CULINARY,First-line supervisors of food preparation and serving workers,378,498,156,621,222,458
+CULINARY,Cooks,1302,416,808,427,494,400
+CULINARY,Food preparation workers,366,402,174,414,192,388
+CULINARY,Bartenders,252,521,110,569,142,493
+CULINARY,"Combined food preparation and serving workers, including fast food",173,391,67,401,107,380
+CULINARY,Waiters and waitresses,868,451,305,501,563,411
+GROUNDSKEEPING,First-line supervisors of housekeeping and janitorial workers,172,620,108,700,64,571
+GROUNDSKEEPING,Janitors and building cleaners,1536,507,1111,547,425,429
+GROUNDSKEEPING,Maids and housekeeping cleaners,876,416,134,475,742,407
+SERVICE,First-line supervisors of gaming workers,117,769,65,900,52,680
+SERVICE,Personal care aides,680,462,128,537,552,441
+SERVICE,Recreation and fitness workers,185,555,78,684,107,526
+SALES,First-line supervisors of retail sales workers,2326,711,1296,825,1030,614
+SALES,First-line supervisors of non-retail sales workers,835,1028,556,1140,280,896
+SALES,Cashiers,1342,415,411,471,931,405
+SALES,Retail salespersons,1918,590,1159,694,759,494
+SALES,Advertising sales agents,161,925,78,1155,83,729
+SALES,Insurance sales agents,427,815,194,1028,232,717
+SALES,"Securities, commodities, and financial services sales agents",211,1155,146,1461,65,767
+SALES,"Sales representatives, services, all other",406,966,268,1147,139,699
+SALES,"Sales representatives, wholesale and manufacturing",1138,1020,843,1066,295,917
+SALES,Real estate brokers and sales agents,463,837,197,1052,266,735
+SALES,"Sales and related workers, all other",158,916,89,1088,70,727
+OFFICE,First-line supervisors of office and administrative support workers,1297,812,434,878,863,781
+OFFICE,Bill and account collectors,152,657,54,674,98,648
+OFFICE,"Bookkeeping, accounting, and auditing clerks",769,692,87,690,682,692
+OFFICE,Customer service representatives,1760,621,611,690,1149,604
+OFFICE,"Hotel, motel, and resort desk clerks",127,481,58,486,69,467
+OFFICE,Receptionists and information clerks,852,575,72,619,781,569
+OFFICE,Dispatchers,250,698,109,759,141,655
+OFFICE,Postal service clerks,127,927,76,974,51,833
+OFFICE,Postal service mail carriers,302,954,187,1021,115,854
+OFFICE,"Production, planning, and expediting clerks",256,838,116,978,141,732
+OFFICE,"Shipping, receiving, and traffic clerks",502,591,354,604,148,566
+OFFICE,Stock clerks and order fillers,1027,520,651,537,376,506
+OFFICE,Secretaries and administrative assistants,2223,687,124,786,2099,683
+OFFICE,Data entry keyers,223,619,55,589,169,638
+OFFICE,Insurance claims and policy processing clerks,259,689,56,762,203,675
+OFFICE,"Office clerks, general",929,620,156,609,773,622
+OFFICE,"Office and administrative support workers, all other",391,745,93,852,298,718
+AGRICULTURAL,farmers,613,445,511,460,102,398
+PRODUCTION,First-line supervisors of production and operating workers,783,875,650,924,133,623
+PRODUCTION,"Electrical, electronics, and electromechanical assemblers",123,554,59,566,64,544
+PRODUCTION,Miscellaneous assemblers and fabricators,950,581,573,637,377,512
+PRODUCTION,Bakers,150,505,69,570,80,475
+PRODUCTION,"Butchers and other meat, poultry, and fish processing workers",247,542,187,582,60,463
+PRODUCTION,"Food processing workers, all other",132,594,82,679,50,508
+PRODUCTION,"Metal workers and plastic workers, all other",351,639,278,678,72,581
+PRODUCTION,Laundry and dry-cleaning workers,133,466,53,487,80,460
+PRODUCTION,"Inspectors, testers, sorters, samplers, and weighers",701,710,440,844,260,583
+PRODUCTION,Packaging and filling machine operators and tenders,239,518,118,605,120,482
+PRODUCTION,"Production workers, all other",846,625,643,666,203,501
+TRANSPORTATION,Bus drivers,323,615,184,681,138,572
+TRANSPORTATION,Driver/sales workers and truck drivers,2687,747,2582,751,105,632
+TRANSPORTATION,"Laborers and freight, stock, and material movers, hand",1433,526,1214,547,219,455
+TRANSPORTATION,"Packers and packagers, hand",385,438,158,462,227,424
